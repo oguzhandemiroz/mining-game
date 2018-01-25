@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cornered (Angular) Textbox</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .border{
+            border: 2px solid #000;
+            padding: 3px;
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+        }
+        button{
+            border: 0;
+            width: 200px;
+            height: 40px;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:active{
+            color: red;
+        }
+        .corner{
+            width: 10px;
+            height: 5px;
+            display: inline-block;
+            position: absolute;
+            background-color: transparent;
+        }
+        .left-top{
+            border-top: 2px solid red;
+            border-left: 2px solid red;
+        }
+        .left-bottom{
+            top: 51px;
+            border-left: 2px solid red;
+            border-bottom: 2px solid red;
+        }
+        .right-top{
+            left: 206px;
+            border-right: 2px solid red;
+            border-top: 2px solid red;
+        }
+        .right-bottom{
+            left: 206px;
+            top: 51px;
+            border-right: 2px solid red;
+            border-bottom: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="corner left-top"></span>
+        <span class="corner left-bottom"></span>
+        <span class="corner right-top"></span>
+        <span class="corner right-bottom"></span>
+        <span class="border">
+            <button>WORK & EARN</button>
+        </span>
+    </div>
+</body>
+</html>
